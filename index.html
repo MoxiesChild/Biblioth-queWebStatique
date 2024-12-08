@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de bibliothèque</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#add-book">Ajouter un livre</a></li>
+            <li><a href="#view-books">Voir les livres</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Section pour ajouter un livre -->
+        <section id="add-book" class="section">
+            <h2>Ajouter un livre</h2>
+            <div class="form-group">
+                <label for="imageInput">Téléchargez une photo du livre :</label>
+                <input type="file" id="imageInput" accept="image/*" />
+            </div>
+            <button onclick="uploadImage()">Ajouter</button>
+        </section>
+
+        <!-- Section pour voir la bibliothèque -->
+        <section id="view-books" class="section">
+            <h2>Bibliothèque</h2>
+            <div id="bookList" class="book-list">
+                <!-- Les livres seront affichés ici dynamiquement -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Gestion de bibliothèque. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
