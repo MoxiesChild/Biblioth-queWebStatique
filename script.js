@@ -6,6 +6,7 @@ async function uploadImage() {
     const formData = new FormData();
     formData.append("file", file);
 
+    // url azure mis a jour par google url
     try {
         // Appel à l'API backend pour envoyer l'image à Azure Blob Storage
         const response = await fetch("https://europe-north1-cybernetic-pact-444213-i0.cloudfunctions.net/main_afficher_livre", {
