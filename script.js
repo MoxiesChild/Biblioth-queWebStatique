@@ -8,7 +8,7 @@ async function uploadImage() {
 
     try {
         // Appel à l'API backend pour envoyer l'image à Azure Blob Storage
-        const response = await fetch("https://gestionbibliotheque.azurewebsites.net/api/AjouterLivre?code=Mj000k0ILDk-ZrEm5BHFka6MoNld8giaRCoCWELXvs5dAzFuRbXsfA%3D%3D", {
+        const response = await fetch("https://europe-north1-cybernetic-pact-444213-i0.cloudfunctions.net/main_afficher_livre", {
             method: "POST",
             body: formData,
         });
